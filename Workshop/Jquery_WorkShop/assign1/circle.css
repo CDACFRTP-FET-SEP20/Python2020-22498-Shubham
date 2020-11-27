@@ -1,0 +1,21 @@
+#colors{
+    margin-top: 20px;
+    width: 80%;
+    height: 100px;
+}
+svg{
+    width: 100px;
+}
+button{
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+.green{
+    background-color: green;
+}
+.gray{
+    background-color: gray;
+}

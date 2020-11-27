@@ -1,0 +1,53 @@
+body{
+    color: white;
+}
+.firstul{
+    list-style-type: none;
+    position: absolute;
+    left: 250px;
+}
+.secondul{
+    list-style-type: none;
+}
+.firstli{
+    background-color: green;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 60px;
+}
+.navdiv{
+    float: left;
+}
+li:hover{
+   
+    color: rgba(233, 202, 27, 0.932);
+}
+li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navdiv:hover .insideli{
+    display: block;
+}
+.insideli li:hover{
+    
+    color: rgba(233, 202, 27, 0.932);
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.insideli{
+    list-style-type: none;
+}
+.insideli{
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    padding-left: unset;
+    padding-right: unset;
+    background-color: green;
+}

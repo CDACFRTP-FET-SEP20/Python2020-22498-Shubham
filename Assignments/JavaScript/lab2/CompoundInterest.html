@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><title> Compound Interest  </title></head>
+    <body>
+        <form style="margin-left: 300px; margin-top: 50px;">
+        <table >
+            <tr>
+                <td>Principal</td>
+                <td><input id="p" type="number"></td>
+            </tr>
+            <tr>
+                <td>Rate of Interes</td>
+                <td><input id="r" type="number"></td>
+            </tr>
+            <tr>
+                <td>period in years</td>
+                <td><input id="n" type="number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" onclick="cal()">Calculate</button></td>
+            </tr>
+        
+    </table></form>
+        <script>
+            function cal(){
+                var p= document.getElementById('p').value;
+                var n= document.getElementById('n').value;
+                var r= document.getElementById('r').value;
+
+                var a = (1+r/100);
+                var cal = (p * Math.pow(a,n))-p;
+                alert("CI is:"+cal.toFixed(2));
+            }
+        </script>
+    </body>
+</html>

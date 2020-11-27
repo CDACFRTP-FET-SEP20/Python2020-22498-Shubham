@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Using Grid</title>
+        <link rel="stylesheet" href="ass4.css">
+    </head>
+    <body onload="date_min()">
+        <form >
+            <span><h2><b>Registration Form</b></h2></span>
+            <div class="grid-cont">
+                <article class="grid-item">Employee Id:</article>
+                <article class="grid-item"><input id="eid" type="number" min="10001" max="15000" autofocus required></article>
+                <article class="grid-item">First Name</article>
+                <article class="grid-item"><input id="fname" type="text" minlength="3" maxlength="15" placeholder="First Name" required></article>
+                <article class="grid-item">Last Name</article>
+                <article class="grid-item"><input id="lname" type="text" minlength="5" maxlength="25" placeholder="Last Name" required></article>
+                <article class="grid-item" id="spacing">Department</article>
+                <article class="grid-item">
+                    <ul><li><input type="radio" name="dept">IT</li>
+                        <li><input type="radio" name="dept">HR</li>
+                        <li><input type="radio" name="dept">Finance</li>
+                        <li><input type="radio" name="dept">Admin</li></ul>
+                </article>
+                <article class="grid-item">Date Of Joining</article>
+                <article class="grid-item"><input id="date" type="date" required></article>
+                <article class="grid-item">Email</article>
+                <article class="grid-item"><input type="email" required></article>
+                <article class="grid-item">Contact No.</article>
+                <article class="grid-item"><input type="tel" pattern="[1-9]{1}[0-9]{9}" required></article>
+                <article class="grid-item">Address</article>
+                <article class="grid-item"><textarea name="address" id="address" cols="30" rows="10" required></textarea></article>
+                <article class="grid-item" id="spacing1">Training Programs to be attended</article>
+                <article class="grid-item"><ul>
+                    <li><input type="checkbox" name="traning">Web Basics</li>
+                    <li><input type="checkbox" name="traning">C#</li>
+                    <li><input type="checkbox" name="traning">Entry Framework</li>
+                    <li><input type="checkbox" name="traning">ASP.NET MVC</li></ul></article>
+                <article class="grid-item"></article>
+                <article class="grid-item"><input type="button" value="Register" onclick="valthisform()">
+                <input type="button" value="cancle"></article>
+            </div>
+        </form>
+        <script>
+            function date_min(){
+                console.log("on load");
+                document.getElementById('date').max = new Date().toISOString().split("T")[0];
+            }
+            function valthisform()
+                {
+                var checkboxs=document.getElementsByName("traning");
+                var radios = document.querySelector('input[name="dept"]:checked');
+                var okay=false;
+                
+                    if (radios) {
+                            console.log('radio button is checked'+ radios.value)
+                            for(var i=0,l=checkboxs.length;i<l;i++)
+                            {
+                                if(checkboxs[i].checked)
+                                {
+                                    okay=true;
+                                    break;
+                                }
+                            }
+                            if(okay){
+                                
+                                location.replace("./success.html")
+                                
+                            }
+                            else alert("Please select Training Programs to be attended");
+                        }
+                        else{
+                            alert("Please select the department")
+                        }
+                    }    
+                
+        </script>
+        </body>
+</html>

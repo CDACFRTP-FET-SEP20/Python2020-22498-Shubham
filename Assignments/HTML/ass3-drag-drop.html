@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drag-Drop</title>
+    </head>
+    <body>
+        Drag the image in the Area
+        <div id="div1" ondragover="dragover(event)" ondrop="drop(event)" 
+        style="border-style: groove; width: 350px; height: 350px;">
+        </div>
+        <img id="img1" src="cybageimage.jpg" ondragstart="drag(event)" >
+
+        <script>
+            function dragover(ev){
+                ev.preventDefault();
+            }
+
+            function drag(ev){
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+            function drop(ev){
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><title>rainbow</title></head>
+    <body>
+        <canvas id="canvas" style="width: 800px; height: 500px;">Not supports</canvas>
+        <canvas id="cv" style="border-style: groove;">Not supports</canvas>
+        <div style="display: none;">
+            <img src="cybageimage.jpg" id="img1">
+            <img src="cybageimage.jpg" id="img2">
+            <img src="cybageimage.jpg" id="img3">
+        </div>
+        <script>
+            window.onload =function(){
+                var page = document.getElementById("canvas");
+                var ctx = page.getContext("2d");
+                var img1 = document.getElementById("img1");
+                var img2 = document.getElementById("img2");
+                var img3 = document.getElementById("img3");
+                ctx.drawImage(img1,0,0,80,100);
+                ctx.drawImage(img2,90,0,80,100);
+                ctx.drawImage(img3,180,0,80,100);
+
+                var color = ['red','orange','yellow','green','blue','indigo','voilet'];
+                var page1 = document.getElementById("cv");
+                var pen = page1.getContext("2d");
+                pen.lineWidth =5;
+                color.forEach((col,n)=>{
+                    pen.beginPath();
+                    pen.strokeStyle = col;
+                    pen.arc(140,100,50+(n*5),0,Math.PI,true);
+                    pen.stroke();
+                    pen.closePath();
+                });
+            }
+        </script>
+    </body>
+</html>

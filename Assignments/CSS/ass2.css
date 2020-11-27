@@ -1,0 +1,85 @@
+body{
+    position: absolute;
+    left: 150px;
+    background-image: url(Milky_Way_IR_Spitzer.jpg);
+}
+header{
+    width: 700px;
+    height: 100px;
+}
+#car1{
+    width: 700px;
+    height: 100px;
+}
+section{
+    width: 700px;
+    height: 400px;
+}
+#sli{
+    float: right;
+    margin-top: 12px;
+    color: white;
+}
+#search{
+    margin-right: 10px;
+}
+div{
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    top: 30px;
+    left: 450px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+}
+.l{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-style: groove;
+}
+li :not([id="sli"]):hover{
+    background-color:rgb(47, 213, 255);
+}
+aside li:hover{
+    background-color:rgb(47, 213, 255);
+}
+.first{
+    float: left;
+    width: 250px;
+}
+#vcar2{
+    background-color: white;
+    height:167px
+}
+#first{
+    width: 200px;
+    height: 167px;
+}
+#second{
+    width: 500px;
+    height: 376px;
+}
+aside{
+    width: 200px;
+    color: white;
+    float: right;
+}
+aside > ul{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.list{
+    text-align: center;
+    padding-top: 30px;
+}

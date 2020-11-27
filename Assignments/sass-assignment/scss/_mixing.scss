@@ -1,0 +1,22 @@
+@mixin mystyle($bgc, $lbgc, $rbgc, $ffmly, $bbgc) {
+    div {
+        font-family: $ffmly;
+        background-color: $bgc;
+        border: 1px solid $lbgc;
+    }
+    article {
+        &:nth-child(1) {
+            background-color: $lbgc;
+            border: 1px solid $lbgc;
+        }
+
+        &:nth-child(2) {
+            background-color: $rbgc;
+            border: 1px solid $rbgc;
+        }
+    }
+    button {
+        font-family: $ffmly;
+        background-color: $bbgc;
+    }
+}

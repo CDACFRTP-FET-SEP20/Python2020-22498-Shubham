@@ -1,0 +1,89 @@
+#fist div {
+  font-family: "fangsong";
+  background-color: #fcfc75;
+  border: 1px solid #0d755b; }
+
+#fist article:nth-child(1) {
+  background-color: #0d755b;
+  border: 1px solid #0d755b; }
+
+#fist article:nth-child(2) {
+  background-color: #70af92;
+  border: 1px solid #70af92; }
+
+#fist button {
+  font-family: "fangsong";
+  background-color: #e47c37; }
+
+#second div {
+  font-family: "fangsong";
+  background-color: #f3a7a7;
+  border: 1px solid #e27676; }
+
+#second article:nth-child(1) {
+  background-color: #e27676;
+  border: 1px solid #e27676; }
+
+#second article:nth-child(2) {
+  background-color: #c75d5d;
+  border: 1px solid #c75d5d; }
+
+#second button {
+  font-family: "fangsong";
+  background-color: #752c2c; }
+
+span.theme {
+  color: #36b5f0; }
+
+span:hover {
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+div {
+  width: 700px;
+  height: 250px;
+  color: white; }
+
+section {
+  width: 650px;
+  height: 200px;
+  position: relative;
+  left: 20px;
+  top: 20px; }
+
+article {
+  box-sizing: border-box; }
+  article:nth-child(1) {
+    width: 69%;
+    height: 200px;
+    float: left;
+    position: relative;
+    left: 4px; }
+  article:nth-child(2) {
+    width: 29%;
+    height: 200px;
+    float: right;
+    position: relative;
+    left: 2px; }
+
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  top: 60%;
+  left: 15px;
+  width: 80%; }
+  button:hover {
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+
+span {
+  padding-left: 10px;
+  padding-top: 10%; }

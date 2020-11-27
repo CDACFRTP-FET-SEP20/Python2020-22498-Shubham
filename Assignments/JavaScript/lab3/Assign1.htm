@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head><title>js1</title></head>
+    <body>
+        <script>
+            var d= new Date();
+            document.body.innerHTML = d.toDateString()+" "+d.toLocaleTimeString()+"<br>" ; 
+            var a = d.getHours();
+            if (a<12){
+                document.body.innerHTML+= "Good Morning!!!";
+            }
+            if (a>12 && a<17) {
+                document.body.innerHTML+= "Good Afternoon !!!";
+            } else {
+                document.body.innerHTML+= "Good Evening !!!";
+            } 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  position: absolute;
+  left: 300px;
+}
+.mainDiv {
+  margin: 20px;
+  padding: 50px;
+}
+h4 {
+  text-align: center;
+}
+
+table,
+tr,
+td {
+  border: 2px solid rgb(243, 143, 85);
+  text-align: center;
+}
+
+input[type="button"] {
+  width: 100%;
+}
+.res {
+  background-color: rgb(114, 213, 243);
+}
+#hdnBtn1,
+#hdnBtn2,
+#hdnBtn3 {
+  height: 50px;
+}

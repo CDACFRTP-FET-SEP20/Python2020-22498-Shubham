@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Use the DOM to change my text!</p> 
+    <p id="test">This text won’t be changed!</p>
+    <script>
+        var v = document.getElementById("demo");
+        v.innerHTML="Good Job!"
+        document.getElementById("test").hidden=true;
+    </script>
+</body>
+</html>

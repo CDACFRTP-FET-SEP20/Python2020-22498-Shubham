@@ -1,0 +1,16 @@
+.dropdown-view {
+  display: block;
+}
+#register {
+  background-color: rgb(48, 149, 236);
+  color: white;
+  padding: 10px 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+.btn {
+  border-color: #007bff;
+}
+.div-margin{
+  margin-top: 60px;
+}

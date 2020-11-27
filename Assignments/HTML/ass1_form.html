@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment1</title>
+    </head>
+    <body>
+        <form>
+        <table>
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td><input type="text" placeholder="Enter Name" required></td></tr>
+            <tr>
+                <td>
+                Number
+            </td>
+                <td>
+                    <input type="tel" placeholder="999999999" pattern="[1-9]{1}[0-9]{9}" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td>
+                    <input type="email" placeholder="Enter the email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Username
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter the username" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    New password
+                </td>
+                <td>
+                    <input id="pass" type="password" placeholder="Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    confirm password
+                </td>
+                <td>
+                    <input id="cpass" placeholder="Confirm Password" type="password"  required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Payment details
+                </td>
+                <td>
+                    <input id="ptm" placeholder="Enter Account No." type="number" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Discount
+                </td>
+                <td>
+                    <input id="discount" type="number" value="10" readonly>&percnt;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit" value="Submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>

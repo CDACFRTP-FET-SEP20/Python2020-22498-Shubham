@@ -1,0 +1,91 @@
+@import "mixing";
+
+#fist {
+  @include mystyle(
+    rgb(252, 252, 117),
+    rgb(13, 117, 91),
+    rgb(112, 175, 146),
+    "fangsong",
+    #e47c37
+  );
+}
+#second {
+  @include mystyle(
+    rgb(243, 167, 167),
+    rgb(226, 118, 118),
+    rgb(199, 93, 93),
+    "fangsong",
+    #752c2c
+  );
+}
+span {
+  &.theme {
+    color: rgb(54, 181, 240);
+  }
+  &:hover {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+div {
+  width: 700px;
+  height: 250px;
+  //border: 1px solid rgb(45, 153, 148);
+  //background-color: rgb(252, 252, 117);
+  color: white;
+  //font-family: "fangsong";
+}
+section {
+  width: 650px;
+  height: 200px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+article {
+  box-sizing: border-box;
+  &:nth-child(1) {
+    //border: 1px solid rgb(13, 117, 91);
+    width: 69%;
+    height: 200px;
+    float: left;
+    //background-color: rgb(13, 117, 91);
+    position: relative;
+    left: 4px;
+  }
+  &:nth-child(2) {
+    //border: 1px solid rgb(112, 175, 146);
+    width: 29%;
+    height: 200px;
+    float: right;
+    // background-color: rgb(112, 175, 146);
+    position: relative;
+    left: 2px;
+  }
+}
+button {
+  //background-color: #e47c37;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  top: 60%;
+  left: 15px;
+  width: 80%;
+  &:hover {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+span {
+  padding-left: 10px;
+  padding-top: 10%;
+}

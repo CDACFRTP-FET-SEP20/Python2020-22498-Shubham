@@ -1,0 +1,23 @@
+.normal {
+  background-color: #ffffff;
+  border-radius: 3 px;
+  width: 300 px;
+  height: 36 px;
+  border: 1 px solid #cccccc;
+  font-style: normal;
+  font-size: 13 px;
+  padding-left: 10 px;
+  color: #666666;
+}
+
+input:disabled {
+  background-color: #eeeeee;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+#error {
+  background-color: #fde7e1;
+  border: 1px solid #f44336;
+  color: #f44336;
+}

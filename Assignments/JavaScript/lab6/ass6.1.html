@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body >
+    
+     <b style="margin-left: 90px;">Location Object Properties</b>
+    
+    <table style="border: 1px solid black;">
+        
+        <tr>
+            <td><b>HREF</b></td>
+            <td id="href"></td>
+        </tr>
+        <tr>
+            <td><b>Path Name</b></td>
+            <td id="pname"></td>
+        </tr>
+        <tr>
+            <td><b>Protocal</b></td>
+            <td id="pcol"></td>
+        </tr>
+    </table>
+    Click <a href="register.html">Here</a> To Register
+    <script>
+        document.getElementById('href').innerHTML= location.href;
+        document.getElementById('pname').innerHTML= location.pathname;
+        document.getElementById('pcol').innerHTML= location.protocol;
+
+    </script>
+</body>
+</html>

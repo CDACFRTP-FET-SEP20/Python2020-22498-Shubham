@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Storage</title>
+        <script src="storage_assignment.js"></script>
+    </head>
+    <body onload = "pageload()">
+        <p id="detection"></p>
+        <table>
+            <tr>
+                <td>Enter Key</td>
+                <td><input type="text" id="key1"></td>
+                <td>Enter Value</td>
+                <td><input type="text" id="value1"></td>
+                <td><button type="button" onclick="localkey()">Local Key</button></td>
+                <td><button type="button" onclick="sessionkey()">Session Key</button></td>
+            </tr>
+        </table>
+        <hr/>
+        <section style="float:left; text-align: center;border-style: groove;">
+        <article><p style="width: 500px;"><b>Local Storage</b></p>
+        <table id="localtable" style="border-style: groove; width: 400px;margin: auto;" border="1px">
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+                <th>Option</th>
+            </tr>
+        </table>
+        <div id="div1"></div>
+        </article>  
+        <p><button type="button" onclick="removeall()">removealllocalstorage</button>
+        </p>
+        </section>
+        <section style="float:left; text-align: center;border-style: groove;">
+            <article><p style="width: 490px;"><b>Session Storage</b></p>
+            <table id="sessiontable" style="border-style: groove; width: 400px; margin: auto;" border="1px">
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                    <th>Option</th>
+                </tr>
+                
+            </table>
+            </article>  
+            <p><button type="button" onclick="removeallsession()">removeallsessionstorage</button>
+            </p>
+            </section>
+        
+    </body>
+</html>

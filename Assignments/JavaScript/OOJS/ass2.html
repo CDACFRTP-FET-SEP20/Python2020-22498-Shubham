@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="ass2.css" />
+  </head>
+  <body>
+    <div class="mainDiv">
+      <h4>Calculator</h4>
+      <table>
+        <tr>
+          <td colspan="4"><input type="text" id="mainInp" readonly /></td>
+          <td rowspan="2" id="hdnBtn4" hidden>
+            <input
+              class="res"
+              type="button"
+              value="x^2"
+              id="hdnBtn1"
+              onclick="getval(this)"
+              hidden
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="0" onclick="getval(this)" /></td>
+          <td><input type="button" value="1" onclick="getval(this)" /></td>
+          <td><input type="button" value="2" onclick="getval(this)" /></td>
+          <td><input type="button" value="+" onclick="getval(this)" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="3" onclick="getval(this)" /></td>
+          <td><input type="button" value="4" onclick="getval(this)" /></td>
+          <td><input type="button" value="5" onclick="getval(this)" /></td>
+          <td><input type="button" value="-" onclick="getval(this)" /></td>
+          <td rowspan="2" id="hdnBtn5" hidden>
+            <input
+              class="res"
+              type="button"
+              value="x^3"
+              id="hdnBtn2"
+              onclick="getval(this)"
+              hidden
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="6" onclick="getval(this)" /></td>
+          <td><input type="button" value="7" onclick="getval(this)" /></td>
+          <td><input type="button" value="8" onclick="getval(this)" /></td>
+          <td><input type="button" value="*" onclick="getval(this)" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="9" onclick="getval(this)" /></td>
+          <td><input type="button" value="C" onclick="clearOne()" /></td>
+          <td><input type="button" value="AC" onclick="clearAll()" /></td>
+          <td><input type="button" value="/" onclick="getval(this)" /></td>
+          <td rowspan="2" id="hdnBtn6" hidden>
+            <input
+              class="res"
+              type="button"
+              value="√x"
+              id="hdnBtn3"
+              onclick="getval(this)"
+              hidden
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              class="res"
+              type="button"
+              value="scientific"
+              id="toggleBtn"
+              onclick="scifiCal()"
+            />
+          </td>
+          <td colspan="2">
+            <input class="res" type="button" value="=" onclick="result(this)" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="ass2.js"></script>
+  </body>
+</html>

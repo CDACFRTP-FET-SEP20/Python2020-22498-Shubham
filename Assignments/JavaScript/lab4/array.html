@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Array</title></head>
+    <body>
+        <p><b>List of Students</b><br>
+        --------------------------------------</p>
+        
+        <input id="nm" type="text"><input type="button" value="Add" onclick="add()"><input type="button" value="Show" onclick="show()">
+       <br><br><br>
+        <div id="list"></div>
+       <script>
+            var a = new Array();
+            function add(){
+                var nm = document.getElementById('nm').value;
+                a.push(nm);
+                document.getElementById('nm').value ="";
+            }
+            function show(){
+                var d= document.getElementById('list');
+                for(let i=0;i<a.length;i++){
+                d.innerHTML+=a[i]+"<br>";}
+            }
+        </script>
+    </body>
+</html>

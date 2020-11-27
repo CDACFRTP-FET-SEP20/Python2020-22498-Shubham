@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ass7.1.css">
+    
+</head>
+<body>
+    <form >
+        <p id="para"></p>
+        <div class="grid-cont">
+            <article class="grid-item">First Name</article>
+            <article class="grid-item"><input id="fname" type="text" placeholder="First Name" required></article>
+            <article class="grid-item">Last Name</article>
+            <article class="grid-item"><input id="lname" type="text" placeholder="Last Name" required></article>
+            <article class="grid-item">Date Of Joining</article>
+            <article class="grid-item"><input id="date" type="text" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required></article>
+            <article class="grid-item">Email</article>
+            <article class="grid-item"><input type="email" required></article>
+            <article class="grid-item" id="spacing1">Hobby</article>
+            <article class="grid-item"><ul>
+                <li><input type="checkbox" id="read" name="hobby">Reading</li>
+                <li><input type="checkbox" name="hobby">Watching </li>
+                <li><input type="checkbox" name="hobby">Movies</li>
+                <li><input type="checkbox" name="hobby">Photography</li></ul></article>
+            <article class="grid-item" id="fwritertag" hidden>Favorite Writer</article>
+            <article class="grid-item" id="fwriter" hidden><input type="text"></article>
+            <article class="grid-item"></article>
+            <article class="grid-item"><input type="submit" value="Register" onclick="valthisform()">
+            <input type="button" value="cancle"></article>
+        </div>
+    </form>
+    <script src="ass7.1.js"></script>
+</body>
+</html>

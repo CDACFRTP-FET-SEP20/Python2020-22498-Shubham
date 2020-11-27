@@ -1,0 +1,25 @@
+body{
+    position: absolute;
+    left: 100px;
+}
+h2{
+    text-align: center;
+}
+form{
+    width: 700px;
+}
+.grid-cont{
+    display: grid;
+    grid-template-columns: auto auto;
+    border-style:  groove ;
+}
+.grid-item{
+    border-style:  groove ;
+}
+ul{
+    list-style-type: none;
+    padding-left: unset;
+}
+#spacing, #spacing1{
+    padding-top: 40px;
+}

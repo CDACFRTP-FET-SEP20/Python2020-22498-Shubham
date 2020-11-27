@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>selector</title>
+    </head>
+    <body>
+        <div>
+            <button id="btn">
+                Color the para
+            </button>
+            <p id="para"> this is the para</p>
+        </div>
+        <script type="text/javascript">
+            var c = document.getElementById("btn");   
+            document.addEventListener("click",()=>{
+            var v = document.querySelector('p');
+            v.style.color="red";
+            v.style.background="yellow";
+        })
+
+        </script>
+    </body>
+</html>

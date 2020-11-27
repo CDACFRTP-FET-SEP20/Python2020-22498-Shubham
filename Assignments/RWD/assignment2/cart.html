@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="cart-logo">
+          <img src="../shopping-cart-20380.png" />
+        </div>
+        <nav class="head-nav hamburger">
+          <img id="img" src="../menu.png" />
+          <ul id="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Registration</a></li>
+            <li><a href="">Video</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <aside class="aside-nav">
+          <nav class="nav">
+            <ul>
+              <li>Quick link</li>
+              <li>link 1</li>
+              <li>link 1</li>
+              <li>link 1</li>
+              <li>link 1</li>
+              <li>link 1</li>
+            </ul>
+          </nav>
+        </aside>
+        <article class="article">
+          <div>
+            <div id="list"></div>
+            <div id="form">
+              <form id="form-obj">
+                <div class="grid">
+                  <div class="grid-item">Picture</div>
+                  <div class="grid-item"><input id="picture" type="text" /></div>
+                  <div class="grid-item">Product Name</div>
+                  <div class="grid-item"><input id="name" type="text" /></div>
+                  <div class="grid-item">Price</div>
+                  <div class="grid-item"><input id="price" type="number" /></div>
+                  <div class="grid-item">Description</div>
+                  <div class="grid-item"><input id="desc" type="text" /></div>
+                </div>
+                <br />
+                <button>Add Product</button>
+              </form>
+            </div>
+            <br>
+            <input id="new-product" class="btn" type="button" value="Add New Product" />
+            <input id="show-list" class="btn" type="button" value="Show List" />
+          </div>
+        </article>
+      </div>
+      <footer>
+        <p>@ All copy right are reserved.</p>
+      </footer>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>

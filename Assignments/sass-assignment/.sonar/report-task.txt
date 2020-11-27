@@ -1,0 +1,5 @@
+projectKey=PYTHON2020-22498-ShubhamKhindre-sass_assignment
+serverUrl=http://172.27.12.78
+dashboardUrl=http://172.27.12.78/dashboard/index/PYTHON2020-22498-ShubhamKhindre-sass_assignment
+ceTaskId=AXWdVk22irXW5IlAPWzp
+ceTaskUrl=http://172.27.12.78/api/ce/task?id=AXWdVk22irXW5IlAPWzp

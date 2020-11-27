@@ -1,0 +1,22 @@
+.text-color{
+    color: #007bff !important;
+}
+.dropdown-view{
+    display: block;
+}
+#register{
+    background-color: rgb(48, 149, 236);
+    color: white;
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 5px;
+}
+footer{
+    text-align: center;
+}
+footer p{
+    font-size: 25px;
+}
+.div-margin{
+    margin-top: 60px;
+}

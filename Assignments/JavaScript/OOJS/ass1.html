@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Area & Perimeter</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+      }
+      button {
+        margin-left: 1px;
+        width: 49%;
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="javascript: event.preventDefault()">
+      <p>
+        Please select any one: <br />
+        <input
+          type="radio"
+          id="triangle"
+          name="shape"
+          value="triangle"
+        />Triangle
+        <input type="radio" id="square" name="shape" value="square" />Square
+        <input
+          type="radio"
+          id="rectangle"
+          name="shape"
+          value="rectangle"
+        />Rectangle
+      </p>
+      <br />
+      <table id="points" hidden>
+        <tr>
+          <td>1</td>
+          <td>X1<input type="number" id="x1" /></td>
+          <td>Y1<input type="number" id="y1" /></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>X2<input type="number" id="x2" /></td>
+          <td>Y2<input type="number" id="y2" /></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>X3<input type="number" id="x3" /></td>
+          <td>Y3<input type="number" id="y3" /></td>
+        </tr>
+        <tr id="p4" hidden>
+          <td>4</td>
+          <td>X4<input type="number" id="x4" /></td>
+          <td>Y4<input type="number" id="y4" /></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <button onclick="peri()">Perimeter</button>
+            <button onclick="area()">Area</button>
+          </td>
+        </tr>
+      </table>
+      <div id="res"></div>
+    </form>
+    <script src="ass1.js"></script>
+  </body>
+</html>

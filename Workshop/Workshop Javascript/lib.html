@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Lib</title>
+        <link rel="stylesheet" href="lib.css">
+    </head>
+    <body>
+        <header>
+                <b>SHUBHSANKET BOOKS</b>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><button onclick="addbook()">Add Book</button></li>
+                    <li><button onclick="showlist()">Show Books</button></li>
+                </ul>
+            </nav>
+            <div id="addb" hidden>
+                <form>
+                    <table>
+                        <tr>
+                            <th colspan="2">Add The Book</th>
+                            
+                        </tr>
+                        <tr>
+                            <td>Book id</td>
+                            <td><input type="number" id="bid" min="1" required></td>
+                        </tr>
+                        <tr>
+                            <td>Book Name</td>
+                            <td><input type="text" id="bname" required></td>
+                        </tr>
+                        <tr>
+                            <td>Book Type</td>
+                            <td><select name="btype" id="btype" required>
+                                <option value="">-Select-</option>
+                                <option value="Fiction">Fiction</option>
+                                <option value="Literature">Literature</option>
+                                <option value="Non-Fiction">Non-Fiction</option>
+                                <option value="Motivation">Motivation</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Price($)</td>
+                            <td><input type="number" id="bprice"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="button" onclick="add()">ADD</button>
+                                <button type="button" onclick="reset()">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="listb" hidden>
+                <table id="listtable">
+                   
+                </table>
+            </div>
+            <div id="editbook">
+
+            </div>
+
+        </section>
+        <script src="lib.js"></script>
+    </body>
+</html>

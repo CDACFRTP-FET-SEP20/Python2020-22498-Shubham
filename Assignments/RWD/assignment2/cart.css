@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* height: 65px; */
+  border-bottom: 1px solid gray;
+}
+.cart-logo {
+  margin-left: 2%;
+  width: 100px;
+  height: 60px;
+}
+.cart-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.head-nav ul li a {
+  color: blue;
+  text-decoration: none;
+}
+.content {
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.aside-nav {
+  background-color: gray;
+  width: 20%;
+}
+.article {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+.article div {
+  flex: 1;
+  margin-left: 2%;
+  text-align: center;
+}
+footer {
+  color: blue;
+  text-align: center;
+  margin-top: 10px;
+  background-color: gray;
+}
+.hamburger img {
+  width: 20px;
+  height: 25px;
+  display: none;
+}
+.head-nav ul {
+  list-style: none;
+}
+.grid {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#form {
+  display: none;
+}
+.btn {
+  margin: auto;
+}
+#list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+.prd-div {
+  width: 150px;
+  height: 300px;
+}
+.prd-img {
+  width: 70%;
+  height: 40%;
+}
+
+@media all and (min-width: 501px) {
+  .head-nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .head-nav ul li {
+    margin: 15px 15px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  header {
+    background-color: rgb(220, 233, 101);
+  }
+  .aside-nav {
+    display: none;
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+  .cart-logo {
+    width: 25%;
+  }
+  .head-nav {
+    width: 75%;
+  }
+  .hamburger ul li a {
+    color: black;
+  }
+  .hamburger ul {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    margin-top: 40px;
+    margin-left: 150px;
+  }
+  .hamburger img {
+    display: block;
+    margin-top: 15px;
+    float: right;
+    margin-right: 20px;
+  }
+  .content .article {
+    margin: auto;
+  }
+  .article div {
+    /* margin-bottom: 10px;
+    padding-bottom: 10px; */
+  }
+  #list {
+    grid-template-columns: auto;
+  }
+
+  .prd-div {
+    padding-left: 10%;
+    width: 250px;
+    height: 400px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "variable";
+@import "button";
+button {
+    @include button();
+}
+.primary {
+    @include primary();
+
+    &:hover {
+        background-color: #9dce5d;
+        color: #ffffff;
+        border: 1px solid #9dce5d;
+    }
+    &:disabled {
+        background-color: #eeeeee;
+        color: #999999;
+        border: 1px solid #eeeeee;
+    }
+}
+.secondary {
+    @include secondary();
+
+    &:hover {
+        background-color: #2095f2;
+        color: #ffffff;
+        border: 1px solid #2095f2;
+    }
+    &:disabled {
+        background-color: #ffffff;
+        color: #999999;
+        border: 1px solid #cccccc;
+    }
+}

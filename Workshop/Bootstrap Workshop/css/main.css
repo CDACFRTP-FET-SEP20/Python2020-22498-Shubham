@@ -1,0 +1,24 @@
+@import "../bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css";
+
+body{
+    background-image: url("../online-registration-concept-background/490427-PHQAIS-218.jpg");
+    background-size: cover;
+    margin-top: auto;
+}
+#form{
+    max-width: 600px ;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    background-color: #f2f2f2;
+}
+#form h2{
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    
+}

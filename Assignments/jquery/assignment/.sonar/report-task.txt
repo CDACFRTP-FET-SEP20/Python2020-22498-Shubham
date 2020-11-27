@@ -1,0 +1,5 @@
+projectKey=PYTHON2020-22498-ShubhamKhindre-jquery_assignment
+serverUrl=http://172.27.12.78
+dashboardUrl=http://172.27.12.78/dashboard/index/PYTHON2020-22498-ShubhamKhindre-jquery_assignment
+ceTaskId=AXWdVLGrirXW5IlAPWzn
+ceTaskUrl=http://172.27.12.78/api/ce/task?id=AXWdVLGrirXW5IlAPWzn

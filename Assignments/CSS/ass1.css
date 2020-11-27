@@ -1,0 +1,12 @@
+table{
+    border: 1px solid black
+}
+table td, th{
+    border: 1px solid black
+}
+th{
+    background-color: #D3D1D1;
+}
+tr:nth-child(2n){
+    background-color: greenyellow;
+}
